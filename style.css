@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&family=Merienda:wght@700&family=Pangolin&family=Turret+Road:wght@700&display=swap');
+/*On import les police d'écriture*/
+* {/*l'étoile "*" permet de tout selectionner*/
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    color: black;
+    
+}
+
+body{
+    background-color: #effbfb;
+}
+nav {
+    background-color: #7cd6de;
+}
+
+
+
+nav ul {
+    width: 100vw;/*Ici on gère le header afin qu'il reste toujours en haut collé*/
+    height: 80px;
+    display: flex;
+    background-color: #7CD6DE;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    padding: 0 30px;
+    z-index: 2;/*Le header passe au premier plan sinnon il passe derrière l'image*/
+}
+
+li {
+    margin-right: 5px;
+}
+
+li:hover a{
+    color: white;/*Change la couleur du texte en blanc quand on passe dessus*/
+}
+
+#logo {
+    align-items: center;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    
+}
+
+#texte_decale{
+    font-weight: bold;/*On met le texte en gras*/
+    padding: 0; /*position texte dans le header*/
+    margin: 0 10px;
+    font-size: 30px;
+}
+
+#profil{
+    width: 100%;
+}
+
+.Resumer {
+    background-color: #ddf5f7;
+    width: auto;
+    height: auto;
+    
+}
+
+.Resumer #titre_film /*Position texte dans l'article*/
+{
+    margin-top: 2%; 
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+
+.Resumer #synopsis/*Position texte dans l'article*/
+{
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Merienda';/*Police du texte*/
+
+}
+
+
+.all {
+    display: flex;
+    flex-direction: row;/*row permet d'aligner verticalement*/
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+.affiche {
+    width: 200px;/*taille de l'affiche*/
+    border-radius: 20px 0 0 20px;/*On donne l'effet d'angle à la photo*/
+}
+
+iframe {
+    width: auto;
+    height: auto;
+    border-radius: 0 20px 20px 0;/*On donne l'effet d'angle à la vidéo*/
+}
+
+#image_sous_header {
+    width: 100vw;
+    margin-top: 80px;/*L'image commence à la fin du header*/
+    position: relative;
+    
+}
+
+#filtre_sombre{
+    display: flex;
+    justify-content: center;/*Centre le texte*/
+    align-items: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);/*Filtre sombre par dessus l'image*/
+    height: 99.5%;
+    width: 100%;
+    top: 0; 
+    flex-direction: column;/*Mettre le texte l'un au dessus de l'autre*/
+}
+#filtre_sombre h1 {
+    font-family: 'Fondamento', cursive;/*On change la police d'écriture*/
+    color: white;
+    font-size: 120px;
+}
+
+#filtre_sombre p {
+    font-family: 'Turret Road', cursive;/*On change la police d'écriture*/
+    color: white;
+    font-size: 40px;
+}
+
+#image_sous_header img {
+    width: 100vw;
+    height: auto;
+}
+
+.container{
+    display: flex;
+
+}
+.container aside{
+    position: sticky;
+    top: 100px;
+    
+}
+article h1 {
+    font-size: 30px;
+    font-family: 'Fondamento', cursive;
+    margin-top: 25px;
+    margin-bottom: 10px;  
+}
+
+aside {
+    background-color: #ddf5f7;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+    height: 390px;
+    text-align: center;
+}
+
+footer {
+    background-color: #7CD6DE;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-height: 100px;
+    overflow: visible;
+    justify-content: flex-end;
+    
+}
+
+#Newsletter {
+    width: 300px;/*On position et choisi la couleur de la newsletter*/
+    height: 300px;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+#Newsletter h3 {
+    margin-top: 5px;
+    font-family: 'Fondamento', cursive;/*On met la police du texte "newsletter*/
+}
+.envoyer {
+    background-color:#f0f0f0;
+    border: 0;
+    padding: 10px 10px;/*On met une marge autour du texte "envoyer"*/
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.envoyer:hover {
+    background-color: white;/*Le fond du bouton "envoyer" est blanc quand on passe dessus*/
+}
+
+.all:hover
+{
+    box-shadow: 0px 2px 2px 0px rgba(119, 119, 119, 0.25); /*Ici c'est l'ombre qui apparait quand on passe sur la div*/
+    border-radius: 20px;
+
+}
+
+p {
+    text-align: center; /*On aligne le texte au centre*/
+    margin-top: 10px;
+}
+
+#info_newsletter
+{
+    border: none;
+    background-color: aqua ;
+    border-bottom: 1px solid black; /*On enlève le contour des "nom" et "email",et on met le trait en dessous en noir*/
+
+}

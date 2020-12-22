@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popcorn Movie</title>
+    <link rel="stylesheet" href="style.css"> <!--ici on donne le chemin d'accès du fichier css.-->
+</head>
+
+ 
+<body>
+    <div >
+        <header>
+            <nav>
+                <ul>
+                    <li id="logo"><a href="#"><img id="logo" src="./Image/logo-128.png" alt="logo site" width="80px"></a></li>
+                    <li><a id="texte_decale" href="#">Home</a></a></li>
+                    <li><a id="texte_decale" href="#">Movies</a></a></li>
+                    <li><a id="texte_decale" href="#">Series</a></a></li>
+                    <li><a id="texte_decale" href="#"><img id="profil" src="./Image/profil.jpg" alt=""></a></li>
+
+                    <!--Ici dont on s'occupe de la barre de navigation. On indique le chemin d'accès des images utilisés.
+                    l'id texte_decale ne sert qu'à décaler de quelques pixels les mots. Nous avons mis un background color dans toute la balise nav.
+                Les images, et les mots sont clicables.-->
+
+
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+            <div id="image_sous_header"> 
+                <img src="./Image/image-title.jpg"alt="" >
+                <div id="filtre_sombre"> 
+                    <h1>Popcorn Movie</h1>  
+                    <p>le streaming gratuit et illimité ;)</p>
+                </div>  <!--Ici nous avons mis l'image avec un filtre grisé.-->
+            </div> 
+            <div class="container">
+
+                
+
+
+            <aside>
+
+                <h2>À l'affiche</h2>
+                <img src="./Image/peninsula.jpg" alt="peninsula" width="250px" height="360px">
+
+            </aside>
+            <!--Ici, le aside est en position sticky pour que en scrollant, il suive le mouvement.-->
+
+
+            <section>
+                <article>
+                    <h1>Movies & Series</h1>
+
+                    <div class="all">
+                        <img src="./Image/the-old-guard.jpg" alt="the-old-guard" class="affiche">
+                        <div class="Resumer">
+                            <h2 id="titre_film" >The Old Guard</h2>
+                            <h3 id="titre_film" >Synopsis</h3>
+                            <p id="synopsis" >Pendant des siècles, ces quatre guerriers protégeaient secrètement l'humanité. Maintenant, leurs dons en font des cibles, Juste quand ils découvrent une autre immortelle.</p>
+                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dkTk7fzBz_Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="all">
+                        <img src="./Image/Enola-Holmes.jpg" alt="Enola-Holmes" class="affiche">
+                        <div class="Resumer">
+                            <h2 id="titre_film" >Enola Holmes</h2>
+                            <h3 id="titre_film" >Synopsis</h3>
+                            <p id="synopsis" >Quand Enola Holmes, la jeune soeur de Sherlock, découvre que sa mère a disparu, elle s'improvise super-détective. Nelardant pas à faire ses preuves,elle se montre plus maligne que son illustre grand frère en mettant au jour le dangereux complot qui entoure un mystérieux jeune lord.</p>
+                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wnzLTkejrT8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="all">
+                        <img src="./Image/Sonic.jpg" alt="Sonic" class="affiche">
+                        <div class="Resumer">
+                            <h2 id="titre_film" >Sonic, le film</h2>
+                            <h3 id="titre_film" >Synopsis</h3>
+                            <p id="synopsis" >L'histoire du hérisson bleu le plus rapide du monde qui arrive sur Terre, sa nouvelle maison. Sonic et son nouveau meilleur ami Tom font équipe pour sauver la planète du diabolique Dr.Robotnik, bien déterminé à régner sur le monde entier.</p>
+                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/IKauPzXtrf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="all">
+                        <img src="./Image/USS-Greyhound.jpg" alt="USS-Greyhound" class="affiche">
+                        <div class="Resumer">
+                            <h2 id="titre_film" >USS-Greyhound - La bataille de l'Atlantique</h2>
+                            <h3 id="titre_film" >Synopsis</h3>
+                            <p id="synopsis" >Le capitaine Ernest Krause dirige une flotte internationale de 37 navires venant ravitailler en soldats et en vivres des forces alliées qui en manquent cruellement.</p>
+                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/GnBPY4u5QTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <!-- Ici, nous avons mis un background pour les titres de film et le texte. Nous avons fait en sorte que les vidéos soientt aux éxtrémités.
+        Nous avons mis un effet d'ombre quand le curseur passe sur toute la div. Le texte est aligné à gauche et la police est changée-->
+
+
+
+
+        </main>
+        <footer>
+
+            <div id="Newsletter">
+                <h3>Newsletter</h3>
+                    <form action="">
+                        <label for=""></label>
+                        <input id="info_newsletter" type="text" name="" value="" placeholder="Nom">
+                        <br><br>
+                        <label for=""></label>
+                        <input id="info_newsletter" type="text" name="" value="" placeholder="Email">
+                        <br><br>
+                    </form>
+                <input class="envoyer" type="button" value="envoyer">
+            </div>
+            <p  style="font-family: Arial, Helvetica, sans-serif;" >copyright@2020 </p>
+        </footer>
+
+        <!--Nous avons enlevé les bordures pour le formulaire, et mis un background de la même couleur que le "Newsletter" pour que ce soit plus beau. 
+        La police à été changé.-->
+
+
+    </div>
+</body>
+</html>
